@@ -4,3 +4,5 @@
 除了.htaccess构建PHP后门外，.user.ini使用的更为广泛，只要是以fastcgi运行的php都可以用这个方法,不像.htaccess那么局限。
 ## 0x01 .user.ini
 -----------------------------------------------------------------------------------------------------------------------------------
+.user.ini到底是什么东东？？？
+[这是官方给出的解释](https://www.php.net/manual/zh/configuration.file.per-user.php)
