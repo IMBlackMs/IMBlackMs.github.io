@@ -31,8 +31,13 @@
 - 文件中已存在.user.ini
 **通过修改.user.ini中的auto_prepend_file,自动执行预先设置的文件**
 
-### .user.ini案例
+### .user.ini测试
 那么，我们可以猥琐地想一下，在哪些情况下可以用到这个姿势？ 比如，某网站限制不允许上传.php文件，你便可以上传一个.user.ini，再上传一个图片马，包含起来进行getshell。不过前提是含有.user.ini的文件夹下需要有正常的php文件，否则也不能包含了。 再比如，你只是想隐藏个后门，这个方式是最方便的。
+- 创建主页面echo.php和.user.ini和预先执行文件1.gif
+![](files.png)
+![](filescontent.png)
+- 访问主页面echo.php测试结果
+![](result.png)
 
 ### .user.ini漏洞的防御
 - 爬取指定文件中的文件，查看是否有.user.ini文件，必要时删除。
