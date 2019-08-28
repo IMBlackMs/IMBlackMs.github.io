@@ -7,3 +7,7 @@
 .user.ini到底是什么东东？？？
 
 [这是官方给出的解释](https://www.php.net/manual/zh/configuration.file.per-user.php)
+```
+自 PHP 5.3.0 起，PHP 支持基于每个目录的 .htaccess 风格的 INI 文件。此类文件仅被 CGI／FastCGI SAPI 处理。此功能使得 PECL 的 htscanner 扩展作废。如果使用 Apache，则用 .htaccess 文件有同样效果。
+```
+不是很清楚，但是我们知道当执行PHP的时候会先调用php.ini配置文件
