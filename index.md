@@ -36,7 +36,7 @@
 - 创建主页面echo.php和.user.ini和预先执行文件1.gif
 ![](files.png)
 ![](filescontent.png)
-- 等待300秒(.user.ini)或者重启Apache服务器，访问主页面echo.php测试结果
+- 等待300秒(和php.ini不同的是，.user.ini是一个能被动态加载的ini文件。也就是说我修改了.user.ini后，不需要重启服务器中间件，只需要等待user_ini.cache_ttl所设置的时间（默认为300秒），即可被重新加载。)或者重启Apache服务器，访问主页面echo.php测试结果
 ![](result.png)
 
 ### .user.ini漏洞的防御
@@ -51,3 +51,4 @@ for parent,dirnames,filenames in os.walk(rootdir):
             print(parent,filename)
 ```
 ![](userlist.png)
+- 在代码编写的时候，过滤掉.user.ini文件。
