@@ -36,7 +36,7 @@
 - 创建主页面echo.php和.user.ini和预先执行文件1.gif
 ![](files.png)
 ![](filescontent.png)
-- 访问主页面echo.php测试结果
+- 等待300秒(.user.ini)或者重启Apache服务器，访问主页面echo.php测试结果
 ![](result.png)
 
 ### .user.ini漏洞的防御
