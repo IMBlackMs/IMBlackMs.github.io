@@ -18,5 +18,9 @@
 ```
 在 .user.ini 风格的 INI 文件中只有具有 PHP_INI_PERDIR 和 PHP_INI_USER 模式的 INI 设置可被识别。 
 ```
-.user.ini修改配置是有条件的，只有在**PHP_INI_PERDIR** 和 **PHP_INI_USER** 模式下才可以自定义配置。其中配置模式有以下四中
+.user.ini修改配置是有条件的，只有在**PHP_INI_PERDIR** 和 **PHP_INI_USER** 模式下才可以自定义配置。其中配置模式有以下四种
 ![](inimode.png)
+
+**结论：在fastcgi运行的PHP中，如果配置模式为PHP_INI_PERDIR或HP_INI_USER，那么.user.ini会添加或者修改PHP中的配置选项＊＊
+
+### 
