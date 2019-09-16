@@ -18,7 +18,7 @@
 ### 浏览器访问localhost/test.php
 ![](./attch/phpstudy_phptest.png)
 ### 成功！
-## 步骤八：测试MySQL环境：在刚才设置的根目录下新建一个mysqltest.php
+## 步骤八：测试MySQL环境：在刚才设置的根目录下新建一个连接数据库的php文件mysqltest.php(注：此处的19961207long.改为自己的设置的mysql密码)
 ![](./attch/phpstudy_mysqltest0.png)
 ### 浏览器访问localhost/mysqltest.php
 ![](./attch/phpstudy_mysqltest.png)
